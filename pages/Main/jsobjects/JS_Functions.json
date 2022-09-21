@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_Functions",
+    "pageId": "Main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tchangeTab: (Tab) => {\n\t\tTabs.selectedTab = Tab\n\t},\n\t\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "Main_JS_Functions",
+  "deleted": false,
+  "gitSyncId": "632b445565ad76020bf40318_632b4884e3c0dc3a8257be68"
+}
