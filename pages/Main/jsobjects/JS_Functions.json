@@ -6,15 +6,11 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tchangeTab: (Tab) => {\n\t\tTabs.selectedTab = Tab\n\t},\n\t\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "body": "export default {\n\tselectedTab: [\"HOME\"],\n}",
     "variables": [
       {
-        "name": "myVar1",
-        "value": "[]"
-      },
-      {
-        "name": "myVar2",
-        "value": "{}"
+        "name": "selectedTab",
+        "value": "[\"HOME\"]"
       }
     ]
   },

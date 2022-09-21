@@ -75,6 +75,7 @@
                       "isCompact": false,
                       "boxShadow": "none",
                       "widgetName": "Action_Menu",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Menu Button",
                       "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
                       "topRow": 3,
@@ -90,6 +91,9 @@
                         },
                         {
                           "key": "menuItems.menuItem2.onClick"
+                        },
+                        {
+                          "key": "menuItems.menuItem3.onClick"
                         }
                       ],
                       "leftColumn": 59,
@@ -109,7 +113,7 @@
                           "isVisible": true,
                           "isDisabled": false,
                           "index": 0,
-                          "onClick": "{{JS_Functions.changeTab('STOCK')}}"
+                          "onClick": "{{storeValue('currTab', 'STOCK')}}"
                         },
                         "menuItem2": {
                           "label": "MANAGE ASSETS",
@@ -118,7 +122,7 @@
                           "isVisible": true,
                           "isDisabled": false,
                           "index": 1,
-                          "onClick": "{{JS_Functions.changeTab('ASSETS')}}"
+                          "onClick": "{{storeValue('currTab', 'ASSETS')}}"
                         },
                         "menuItem3": {
                           "label": "HOME",
@@ -126,7 +130,8 @@
                           "widgetId": "",
                           "isVisible": true,
                           "isDisabled": false,
-                          "index": 2
+                          "index": 2,
+                          "onClick": "{{storeValue('currTab', 'HOME')}}"
                         }
                       },
                       "isVisible": true,
@@ -343,6 +348,9 @@
                         },
                         {
                           "key": "boxShadow"
+                        },
+                        {
+                          "key": "defaultTab"
                         }
                       ],
                       "children": [
@@ -612,7 +620,7 @@
                       "rightColumn": 64,
                       "widgetId": "hb3kj93rcg",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "defaultTab": "HOME",
+                      "defaultTab": "{{ appsmith.store.currTab }}",
                       "onTabSelected": "",
                       "shouldShowTabs": true,
                       "tabsObj": {
