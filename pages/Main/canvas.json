@@ -217,11 +217,14 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
                         }
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Label",
+                      "text": "{{ appsmith.store.currTab }}",
                       "key": "qpuylb355k",
                       "isDeprecated": false,
                       "rightColumn": 58,
@@ -423,7 +426,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "fontSize": "1rem"
+                              "fontSize": "1.25rem"
                             }
                           ],
                           "isDisabled": false,
@@ -510,7 +513,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "fontSize": "1rem"
+                              "fontSize": "1.25rem"
                             }
                           ],
                           "isDisabled": false,
@@ -596,7 +599,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "fontSize": "1rem"
+                              "fontSize": "1.25rem"
                             }
                           ],
                           "key": "nt88vbne28",
@@ -622,7 +625,7 @@
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "defaultTab": "{{ appsmith.store.currTab }}",
                       "onTabSelected": "",
-                      "shouldShowTabs": true,
+                      "shouldShowTabs": false,
                       "tabsObj": {
                         "tab1": {
                           "label": "HOME",
