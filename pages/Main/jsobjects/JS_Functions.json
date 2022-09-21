@@ -6,13 +6,8 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tselectedTab: [\"HOME\"],\n}",
-    "variables": [
-      {
-        "name": "selectedTab",
-        "value": "[\"HOME\"]"
-      }
-    ]
+    "body": "export default {\n}",
+    "variables": []
   },
   "id": "Main_JS_Functions",
   "deleted": false,
