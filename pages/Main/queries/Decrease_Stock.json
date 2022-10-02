@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 100000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE stock SET amount = amount - {{CheckOutStock.formData.Amount}} WHERE barcode = CAST({{CheckOutStock.formData.Barcode}} as text);\n",
+      "body": "",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -26,20 +26,13 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [
       "'Query timeout' field must be an integer between 0 and 60000"
     ],
     "messages": [],
-    "jsonPathKeys": [
-      "CheckOutStock.formData.Amount",
-      "CheckOutStock.formData.Barcode"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

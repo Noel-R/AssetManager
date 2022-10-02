@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 100000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO stock VALUES ({{Stock_form.formData.ID}}, {{Stock_form.formData.Name}}, {{Stock_form.formData.Current_Stock}}, {{Stock_form.formData.Barcode}})",
+      "body": "INSERT INTO \"Stock\" (\"Name\", \"Count\", \"Barcode\")\nVALUES\n\t({{Stock_form.formData.Name}}, {{Stock_form.formData.Current_Stock}}, {{Stock_form.formData.Barcode}});",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -39,7 +39,6 @@
     "jsonPathKeys": [
       "Stock_form.formData.Barcode",
       "Stock_form.formData.Current_Stock",
-      "Stock_form.formData.ID",
       "Stock_form.formData.Name"
     ],
     "userSetOnLoad": false,

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE stock SET amount = amount + {{CheckInStock.formData.Amount}} WHERE barcode = CAST({{CheckInStock.formData.Barcode}} as text);",
+      "body": "",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -26,18 +26,11 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "CheckInStock.formData.Amount",
-      "CheckInStock.formData.Barcode"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
