@@ -110,7 +110,11 @@
                           "isVisible": true,
                           "isDisabled": false,
                           "index": 0,
-                          "onClick": "{{storeValue('currTab', 'STOCK')}}"
+                          "onClick": "{{storeValue('currTab', 'STOCK')}}",
+                          "backgroundColor": "#27272a",
+                          "textColor": "#e4e4e7",
+                          "iconName": "array",
+                          "iconColor": "#e4e4e7"
                         },
                         "menuItem3": {
                           "label": "HOME",
@@ -119,7 +123,11 @@
                           "isVisible": true,
                           "isDisabled": false,
                           "index": 1,
-                          "onClick": "{{storeValue('currTab', 'HOME')}}"
+                          "onClick": "{{storeValue('currTab', 'HOME')}}",
+                          "iconName": "app-header",
+                          "iconColor": "#e4e4e7",
+                          "textColor": "#e4e4e7",
+                          "backgroundColor": "#27272a"
                         }
                       },
                       "isVisible": true,
@@ -129,7 +137,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "0.375rem",
-                      "menuColor": "#f4f4f5",
+                      "menuColor": "#101010",
                       "iconAlign": "right",
                       "placement": "CENTER"
                     },
@@ -171,7 +179,7 @@
                       "widgetId": "i4lhug78ak",
                       "isVisible": true,
                       "fontStyle": "BOLD",
-                      "textColor": "#231F20",
+                      "textColor": "#e4e4e7",
                       "version": 1,
                       "parentId": "usy8iscodm",
                       "renderMode": "CANVAS",
@@ -220,13 +228,13 @@
                       "widgetId": "m954jp17yz",
                       "isVisible": true,
                       "fontStyle": "BOLD",
-                      "textColor": "#231F20",
+                      "textColor": "#e4e4e7",
                       "version": 1,
                       "parentId": "usy8iscodm",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "fontSize": "1rem"
+                      "fontSize": "1.875rem"
                     }
                   ],
                   "key": "nt88vbne28",
@@ -246,7 +254,7 @@
               ],
               "borderWidth": "0",
               "key": "enr9jlwtu2",
-              "backgroundColor": "#fafafa",
+              "backgroundColor": "#101010",
               "isDeprecated": false,
               "rightColumn": 64,
               "widgetId": "y75tzplmfr",
@@ -311,7 +319,7 @@
                   ],
                   "children": [
                     {
-                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "boxShadow": "none",
                       "widgetName": "Tabs",
                       "isCanvas": true,
                       "displayName": "Tabs",
@@ -333,12 +341,6 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "boxShadow"
                         },
                         {
                           "key": "defaultTab"
@@ -916,7 +918,7 @@
                             },
                             {
                               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                              "widgetName": "Action_Group",
+                              "widgetName": "Actions",
                               "isCanvas": true,
                               "displayName": "Tabs",
                               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
@@ -994,7 +996,8 @@
                                               "isSpellCheck": false,
                                               "isVisible": true,
                                               "labelTextSize": "0.875rem",
-                                              "label": "Barcode"
+                                              "label": "Barcode",
+                                              "labelStyle": ""
                                             },
                                             "Amount": {
                                               "children": {},
@@ -1314,7 +1317,7 @@
                                   "isDisabled": false,
                                   "key": "71m5xt91mm",
                                   "isDeprecated": false,
-                                  "tabName": "Check In",
+                                  "tabName": "h",
                                   "rightColumn": 460.5,
                                   "detachFromLayout": true,
                                   "widgetId": "jzua6pn9qx",
@@ -1790,7 +1793,7 @@
                                               "children": {},
                                               "dataType": "string",
                                               "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Current_Stock))(Stock_form.sourceData, Stock_form.formData, Stock_form.fieldState)}}",
-                                              "fieldType": "Text Input",
+                                              "fieldType": "Number Input",
                                               "sourceData": "0",
                                               "isCustomField": false,
                                               "accessor": "Current_Stock",
@@ -2136,7 +2139,7 @@
                               "shouldShowTabs": false,
                               "tabsObj": {
                                 "tab1": {
-                                  "label": "Check In",
+                                  "label": "h",
                                   "id": "tab1",
                                   "widgetId": "jzua6pn9qx",
                                   "isVisible": true,
@@ -2210,7 +2213,7 @@
                       "parentId": "io1jwfbcv2",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                      "borderRadius": "1.5rem"
                     }
                   ],
                   "key": "nt88vbne28",
@@ -2230,7 +2233,7 @@
               ],
               "borderWidth": "0",
               "key": "enr9jlwtu2",
-              "backgroundColor": "#f4f4f5",
+              "backgroundColor": "#101010",
               "isDeprecated": false,
               "rightColumn": 64,
               "widgetId": "ba5keo8v6j",
