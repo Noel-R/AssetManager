@@ -322,6 +322,11 @@
                       "boxShadow": "none",
                       "widgetName": "Tabs",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tabsObj.tabzptxa9vaq7.isVisible"
+                        }
+                      ],
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
                       "topRow": 0,
@@ -353,7 +358,7 @@
                           "widgetName": "Canvas3",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 390,
+                          "bottomRow": 420,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": true,
@@ -416,7 +421,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "fontSize": "1.25rem"
+                              "fontSize": "1.875rem"
                             }
                           ],
                           "isDisabled": false,
@@ -440,7 +445,7 @@
                           "widgetName": "Canvas4",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 570,
+                          "bottomRow": 600,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": true,
@@ -2166,6 +2171,120 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "BarcodeInput",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onSubmit"
+                                }
+                              ],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "onSubmit": "{{storeValue('LastScanned',BarcodeInput.text);\nSelect_Item.run();\nstoreValue('currTab', 'ITEM')}}",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 54,
+                              "bottomRow": 58,
+                              "parentRowSpace": 10,
+                              "labelWidth": 5,
+                              "autoFocus": true,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 19.1875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onSubmit"
+                                }
+                              ],
+                              "resetOnSubmit": true,
+                              "leftColumn": 2,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "labelPosition": "Auto",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "3fbhc1k3nq",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 17,
+                              "iconName": "barcode",
+                              "widgetId": "lch5pv25tl",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "label": "",
+                              "version": 2,
+                              "parentId": "uc1zds8wb5",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "iconAlign": "left",
+                              "defaultText": ""
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "MobileScan",
+                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "displayName": "Code Scanner",
+                              "iconSVG": "/static/media/icon.c4a2da6d32c0f212d031fca147e4f7cb.svg",
+                              "searchTags": [
+                                "barcode scanner",
+                                "qr scanner",
+                                "code detector",
+                                "barcode reader"
+                              ],
+                              "topRow": 54,
+                              "bottomRow": 58,
+                              "parentRowSpace": 10,
+                              "type": "CODE_SCANNER_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 19.1875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onCodeDetected"
+                                }
+                              ],
+                              "leftColumn": 18,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "buttonColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "key": "lnlk88s3vn",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 26,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "gxgluqt7y5",
+                              "onCodeDetected": "{{storeValue('LastScanned',MobileScan.value)}}",
+                              "isVisible": true,
+                              "label": "Scan Barcode",
+                              "version": 1,
+                              "parentId": "uc1zds8wb5",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "placement": "CENTER"
                             }
                           ],
                           "isDisabled": false,
@@ -2176,6 +2295,95 @@
                           "detachFromLayout": true,
                           "widgetId": "uc1zds8wb5",
                           "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "hb3kj93rcg",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        },
+                        {
+                          "tabId": "tabzptxa9vaq7",
+                          "boxShadow": "none",
+                          "widgetName": "Canvas9",
+                          "displayName": "Canvas",
+                          "topRow": 1,
+                          "bottomRow": 590,
+                          "parentRowSpace": 1,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "hideCard": true,
+                          "minHeight": 600,
+                          "parentColumnSpace": 1,
+                          "dynamicTriggerPathList": [],
+                          "leftColumn": 0,
+                          "dynamicBindingPathList": [
+                            {
+                              "key": "borderRadius"
+                            },
+                            {
+                              "key": "accentColor"
+                            }
+                          ],
+                          "children": [
+                            {
+                              "widgetName": "Text2",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 2,
+                              "bottomRow": 6,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 19.1875,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "{{Select_Item.data.Name}}",
+                              "key": "sbxn0qk6jd",
+                              "isDeprecated": false,
+                              "rightColumn": 24,
+                              "textAlign": "LEFT",
+                              "widgetId": "tcfo94adjy",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "bx02ep57jh",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "fontSize": "1rem"
+                            }
+                          ],
+                          "key": "oloz9xnwoz",
+                          "isDeprecated": false,
+                          "tabName": "ITEM",
+                          "rightColumn": 1248,
+                          "detachFromLayout": true,
+                          "widgetId": "bx02ep57jh",
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "containerStyle": "none",
                           "isVisible": true,
                           "version": 1,
                           "parentId": "hb3kj93rcg",
@@ -2206,6 +2414,13 @@
                           "widgetId": "uc1zds8wb5",
                           "isVisible": true,
                           "index": 1
+                        },
+                        "tabzptxa9vaq7": {
+                          "id": "tabzptxa9vaq7",
+                          "index": 2,
+                          "label": "ITEM",
+                          "widgetId": "bx02ep57jh",
+                          "isVisible": "true"
                         }
                       },
                       "isVisible": true,
@@ -2256,6 +2471,18 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 100000
+            }
+          ],
+          [
+            {
+              "id": "Main_Select_Item",
+              "name": "Select_Item",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.LastScanned"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ]
         ],
