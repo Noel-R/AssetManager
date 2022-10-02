@@ -1814,9 +1814,8 @@
                                           "fieldType": "Object",
                                           "sourceData": {
                                             "Name": "",
-                                            "ID": "",
-                                            "Barcode": "",
-                                            "Current_Stock": "0"
+                                            "Current_Stock": "0",
+                                            "Barcode": ""
                                           },
                                           "isCustomField": false,
                                           "accessor": "__root_schema__",
@@ -2008,7 +2007,7 @@
                                           "key": "schema.__root_schema__.children.Barcode.borderRadius"
                                         }
                                       ],
-                                      "sourceData": "{\n  \"Name\": \"\",\n\t\"ID\": \"\",\n\t\"Current_Stock\": \"0\",\n\t\"Barcode\": \"\"\n}",
+                                      "sourceData": "{\n  \"Name\": \"\",\n\t\"Current_Stock\": \"0\",\n\t\"Barcode\": \"\"\n}",
                                       "showReset": true,
                                       "resetButtonLabel": "Clear",
                                       "key": "3ij29kux6q",
@@ -2126,44 +2125,6 @@
                                   "renderMode": "CANVAS",
                                   "isLoading": false,
                                   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-                                },
-                                {
-                                  "tabId": "tabekksrev4cx",
-                                  "boxShadow": "none",
-                                  "widgetName": "Canvas9",
-                                  "displayName": "Canvas",
-                                  "topRow": 1,
-                                  "bottomRow": 471,
-                                  "parentRowSpace": 1,
-                                  "type": "CANVAS_WIDGET",
-                                  "canExtend": false,
-                                  "hideCard": true,
-                                  "minHeight": 470,
-                                  "parentColumnSpace": 1,
-                                  "leftColumn": 0,
-                                  "dynamicBindingPathList": [
-                                    {
-                                      "key": "borderRadius"
-                                    },
-                                    {
-                                      "key": "accentColor"
-                                    }
-                                  ],
-                                  "children": [],
-                                  "key": "44rbhvuvuu",
-                                  "isDeprecated": false,
-                                  "tabName": "Tab 1",
-                                  "rightColumn": 460.5,
-                                  "detachFromLayout": true,
-                                  "widgetId": "8544dmwi0w",
-                                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                                  "containerStyle": "none",
-                                  "isVisible": true,
-                                  "version": 1,
-                                  "parentId": "12i06jpqtp",
-                                  "renderMode": "CANVAS",
-                                  "isLoading": false,
-                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                                 }
                               ],
                               "key": "rqyli3jv4l",
@@ -2193,13 +2154,6 @@
                                   "index": 2,
                                   "label": "Add Stock",
                                   "widgetId": "rz3nnojz9c",
-                                  "isVisible": true
-                                },
-                                "tabekksrev4cx": {
-                                  "id": "tabekksrev4cx",
-                                  "index": 3,
-                                  "label": "Tab 1",
-                                  "widgetId": "8544dmwi0w",
                                   "isVisible": true
                                 }
                               },
